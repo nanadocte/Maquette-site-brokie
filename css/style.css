@@ -46,11 +46,12 @@ a {
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+   
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-
-
+.hebergements-and-populaires .card {
+ padding: 5px;
+}
 
 .card img {
     object-fit: cover;
@@ -62,6 +63,10 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+}
+
+h3.footer-title {
+    margin: 0;
 }
 
 .euro {
@@ -88,6 +93,10 @@ p {
 
 p.card-subtitle {
     font-size: 14px;
+}
+
+.activite-cards h3 {
+    font-size: 16px;
 }
 
 section.a-propos, section.nos-hebergements, section.assistance {
@@ -170,7 +179,6 @@ h1 {
 
 /* form */
 form.header-form {
-    
     display: flex;
     position: relative;
     border-radius: 15px;
@@ -227,7 +235,7 @@ input[type="button"] {
     font-size: 18px;
 }
 
-.header-filter ul {
+#filter-list {
     display: flex;
     padding: 0;
     gap: 15px;
@@ -257,9 +265,7 @@ input[type="button"] {
     background: #DEEBFF;
 }
 
-.header-filter ul {
-    height: 50px;
-}
+
 
 .header-filter button {
     height: 100%;
@@ -380,7 +386,6 @@ input[type="button"] {
     margin-bottom: 5px;
 }
 
-
 /******** Activité **********/ 
 section.activite {
     display: flex;
@@ -397,10 +402,17 @@ section.activite {
     box-sizing: border-box;
 }
 
-
+.activite-cards article.card {
+    display: flex;
+    flex-direction: column;
+    height: 439px;
+}
 
 .activite-cards h3 {
-    padding: 20px 19px;
+    display: flex;
+    align-items: center;
+    height: 59px;
+    padding: 0 19px;
     margin: 0;
 }
 
@@ -410,17 +422,11 @@ section.activite {
     border-radius: 15px 15px 0 0;
 }
 
-
-
-
 footer {
-   
     display: grid;
     background: #F2F2F2;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
-
 
 footer ul {
     padding: 0;
